@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kira Jean - UX/UI Designer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            max-width: 1200px;
+            margin: auto;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        header a {
+            text-decoration: none;
+            color: black;
+            margin: 0 10px;
+        }
+        .container {
+            padding: 20px;
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+        }
+        .profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .bio {
+            max-width: 600px;
+        }
+        .bio h2 {
+            margin: 0;
+        }
+        .bio p {
+            margin: 10px 0;
+        }
+        .experience {
+            margin-bottom: 40px;
+        }
+        .experience p {
+            margin: 10px 0;
+        }
+        .clients {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .clients h2 {
+            margin-bottom: 20px;
+        }
+        .client-list {
+            display: flex;
+            justify-content: space-around;
+        }
+        .client {
+            background-color: #fff7ed;
+            padding: 20px;
+            border-radius: 8px;
+            width: 30%;
+            text-align: center;
+        }
+        .client img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        .client p {
+            margin: 10px 0;
+        }
+        .contact {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .contact h2 {
+            margin-bottom: 20px;
+        }
+        .contact form {
+            max-width: 600px;
+            margin: auto;
+        }
+        .contact form input,
+        .contact form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        .contact form button {
+            padding: 10px 20px;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        @media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header a {
+        margin: 10px 0;
+    }
+
+    .profile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .bio {
+        max-width: 100%;
+    }
+
+    .client-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .client {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Kira Jean</div>
+        <nav>
+            <a href="#">About</a>
+            <a href="#">Work</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <div class="container">
+        <section class="profile">
+            <img src="path/to/profile_picture.jpg" alt="Kira Jean">
+            <div class="bio">
+                <h2>Kira Jean</h2>
+                <p>UX/UI Designer / Artist / Marketing</p>
+                <p>
+                    I am a highly creative individual who prides themselves on incorporating art and empathy into all of the work that I do. I have recently discovered a passion for creating new and improved user experiences through design. Throughout my life, I have always loved to comprehend people's needs. With that being said, UX/UI design has come so naturally to me. I excel in user research and ideation, defining the problem, design, and prototyping.
+                </p>
+            </div>
+        </section>
+        <section class="experience">
+            <p>
+                From March to September 2024, I expanded my UX/UI knowledge through a bootcamp at the University of Denver, University College. The course provided me with valuable insights on blending my creative talents with my empathetic nature to build a career that enhances both aesthetics and usability. I excelled in various aspects, including user research, analysis and planning, design, prototyping, and testing. This experience has solidified my passion for UX/UI design, allowing me to pursue a career that fulfills my creative aspirations and makes the world more intuitive and visually engaging.
+            </p>
+        </section>
+        <section class="clients">
+            <h2>Clients</h2>
+            <div class="client-list">
+                <div class="client">
+                    <img src="path/to/client1_picture.jpg" alt="Client 1">
+                    <p>★★★★★</p>
+                    <p>Gemma Nolen, Google</p>
+                </div>
+                <div class="client">
+                    <img src="path/to/client2_picture.jpg" alt="Client 2">
+                    <p>★★★★★</p>
+                    <p>Gemma Nolen, Google</p>
+                </div>
+                <div class="client">
+                    <img src="path/to/client3_picture.jpg" alt="Client 3">
+                    <p>★★★★★</p>
+                    <p>Gemma Nolen, Google</p>
+                </div>
+            </div>
+        </section>
+        <section class="contact">
+            <h2>Let's work together</h2>
+            <form>
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="message" placeholder="Type your message here" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
