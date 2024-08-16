@@ -10,6 +10,7 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 20px;
+    background-color: #f4f4f4;
 }
 
 header a {
@@ -18,85 +19,61 @@ header a {
     margin: 0 10px;
 }
 
-.container {
+.intro {
     padding: 20px;
+    text-align: center;
 }
 
-.profile {
+.intro h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: auto;
+}
+
+.services {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.service {
+    width: 30%;
+    text-align: center;
     background-color: #f4f4f4;
     padding: 20px;
     border-radius: 8px;
-    margin-bottom: 40px;
 }
 
-.profile img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-right: 20px;
-}
-
-.bio {
-    max-width: 600px;
-}
-
-.bio h2 {
-    margin: 0;
-}
-
-.bio p {
-    margin: 10px 0;
-}
-
-.experience {
-    margin-bottom: 40px;
-}
-
-.experience p {
-    margin: 10px 0;
-}
-
-.clients {
+.work {
+    padding: 20px;
     text-align: center;
-    margin-bottom: 40px;
 }
 
-.clients h2 {
+.projects {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.project {
+    width: 45%;
     margin-bottom: 20px;
 }
 
-.client-list {
-    display: flex;
-    justify-content: space-around;
-}
-
-.client {
-    background-color: #fff7ed;
-    padding: 20px;
+.project img {
+    width: 100%;
     border-radius: 8px;
-    width: 30%;
-    text-align: center;
-}
-
-.client img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-}
-
-.client p {
-    margin: 10px 0;
 }
 
 .contact {
+    padding: 20px;
     text-align: center;
-    margin-top: 40px;
-}
-
-.contact h2 {
-    margin-bottom: 20px;
 }
 
 .contact form {
@@ -122,6 +99,10 @@ header a {
     cursor: pointer;
 }
 
+.about .container {
+    padding: 20px;
+}
+
 /* Responsive Design */
 @media screen and (max-width: 768px) {
     header {
@@ -133,26 +114,22 @@ header a {
         margin: 10px 0;
     }
 
-    .profile {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .profile img {
-        margin-right: 0;
-        margin-bottom: 20px;
-    }
-
-    .bio {
-        max-width: 100%;
-    }
-
-    .client-list {
+    .services {
         flex-direction: column;
         align-items: center;
     }
 
-    .client {
+    .service {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project {
         width: 80%;
         margin-bottom: 20px;
     }
