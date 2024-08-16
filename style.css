@@ -151,6 +151,11 @@ header a {
         align-items: center;
     }
 
+    .projects {
+        text-align: center;
+        display: flex;
+    }
+    
     header a {
         margin: 10px 0;
     }
