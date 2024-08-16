@@ -26,25 +26,43 @@
             transform: scale(1.1); 
         }
 
-        .projects { 
+        .projects {
             text-align: center;
             display: flex;
-        }        
-        
+        }
+
         header {
             display: flex;
             justify-content: space-between;
             padding: 20px;
         }
-        
         header a {
             text-decoration: none;
             color: black;
             margin: 0 10px;
         }
+
+        h2 {
+            text-align: center;
+        }
+
+        .project {
+            color: #000000;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s ease, font-size 0.3s ease;
+        }
+
+        .project:hover {
+            transform: scale(1.1); 
+        }
+
         .container {
             padding: 20px;
         }
+
         .profile {
             display: flex;
             align-items: center;
@@ -217,30 +235,13 @@
             </div>
             <div class="project">
                 <img src="images/beatbyte.png" alt="BeaatByte">
-                <p>BeaatByte</p>
+                <p>BeatByte</p>
                 <p>Music Streaming Website with Community Features</p>
             </div>
         </div>
     </section>
 
-    <section class="contact" id="contact">
-        <h2>Contact</h2>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
-
     <section class="about" id="about">
-    <header>
-        <div class="logo">Kira Jean</div>
-        <nav>
-            <a href="#">About</a>
-            <a href="#">Work</a>
-            <a href="#">Contact</a>
-        </nav>
     </header>
     <div class="container">
         <section class="profile">
