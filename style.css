@@ -29,6 +29,7 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 20px;
+    font-weight: bolder;
 }
 
 header a {
